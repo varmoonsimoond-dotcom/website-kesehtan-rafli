@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5fafa;
+    color: #333;
+}
+
+header {
+    background: #16a085;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d5fff5;
+}
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    background: linear-gradient(120deg, #d9fff5, #ffffff);
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #117a65;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 550px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+button {
+    background: #16a085;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #117a65;
+}
+
+section {
+    padding: 70px 8%;
+}
+
+h2 {
+    text-align: center;
+    color: #117a65;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 280px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #16a085;
+    margin-bottom: 12px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+.tips {
+    background: #e8f8f5;
+}
+
+.tips ul {
+    max-width: 600px;
+    margin: auto;
+    line-height: 2.2;
+    font-size: 18px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #117a65;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Tampilan HP */
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero {
+        text-align: center;
+    }
+}
